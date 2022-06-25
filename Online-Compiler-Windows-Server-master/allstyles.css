@@ -1,0 +1,473 @@
+body {
+    font: 400 15px Lato, sans-serif;
+    line-height: 1.8;
+    color: #fff !important;
+    background-color: rgb(49, 57, 61) !important;
+  }
+  
+  .jumbotron {
+    font-family: Montserrat, sans-serif;
+  }
+  
+  .navbar {
+    font-family: Montserrat, sans-serif;
+  }
+  
+  h2 {
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #fff !important;
+    font-weight: 600;
+    margin-bottom: 30px;
+  }
+  
+  h4 {
+    font-size: 19px;
+    line-height: 1.375em;
+    color: #fff !important;
+    font-weight: 400;
+    margin-bottom: 30px;
+  }
+    
+
+    /* bootstrap styling*/
+    .jumbotron {
+      background-color: #222D32 !important;
+      color: #fff !important;
+      padding: 100px 25px;
+    }
+    
+    .container-fluid {
+      padding: 60px 50px;
+    }
+  
+    .bg-grey {
+      background-color: #222D32;
+    }
+  
+  
+    .navbar {
+      margin-bottom: 0;
+      background-color: rgb(54, 94, 139)!important;
+      z-index: 9999;
+      border: 0 !important;
+      font-size: 12px !important;
+      line-height: 1.42857143 !important;
+      letter-spacing: 4px;
+      border-radius: 0;
+      /* box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); */
+
+    }
+    
+    .navbar li a, .navbar .navbar-brand {
+      color: #fff !important;
+    }
+    
+    .navbar-nav li a:hover, .navbar-nav li.active a {
+      color: rgb(74, 125, 184) !important;
+      background-color: #fff !important;
+    }
+    
+    .navbar-default .navbar-toggle {
+      border-color: transparent;
+      color: #fff !important;
+    }
+  
+    .slideanim {visibility:hidden;}
+  .slide {
+    /* The name of the animation */
+    animation-name: slide;
+    -webkit-animation-name: slide;
+    /* The duration of the animation */
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    /* Make the element visible */
+    visibility: visible;
+  }
+  
+  /* Go from 0% to 100% opacity (see-through) and specify the percentage from when to slide in the element along the Y-axis */
+  @keyframes slide {
+    0% {
+      opacity: 0;
+      transform: translateY(70%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  @-webkit-keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
+  
+  
+  /* .form-control:focus {
+    border-color: inherit;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    outline: 0;
+    background-color: #1A2226;
+    color: #ECF0F5;
+  } */
+  
+  .btn-primary:hover {
+    background-color: rgb(51, 87, 128) !important;
+    border-color: rgb(51, 87, 128) !important;
+  }
+  
+  .btn-primary {
+    background-color: rgb(54, 94, 139) !important;
+    color: #fff !important;
+    border: none !important;
+  }
+  
+  /* btn-primary */
+  
+  .btn-primary.dark-btn:hover {
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6) !important;
+    box-shadow: inset 0px 1px 1px rgba(0,0,0,0.075), 0px 0px 8px rgba(102,175,233,0.6) !important;
+    outline-width: 0;
+    transition: All 0.15s ease-in;
+    -webkit-transition: All 0.10s ease-in;
+    -moz-transition: All 0.10s ease-in;
+    -o-transition: All 0.10s ease-in;
+    outline: none !important;
+    background-color: rgb(23, 35, 39) !important;
+    color: rgba(102,175,233,0.6) !important;
+  }
+  
+  .btn-primary.dark-btn:focus {
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6) !important;
+    box-shadow: inset 0px 1px 1px rgba(0,0,0,0.075), 0px 0px 8px rgba(102,175,233,0.6) !important;
+    border: 1px solid rgba(102,175,233,0.6) !important;
+    
+  }
+
+  .btn-primary.dark-btn {
+    background-color: #222D32 !important;
+    color: rgb(54, 94, 139)	 !important;
+    border: none !important;
+    padding: 10px 0 !important;
+    border-radius: 0;
+    width: 150px !important;
+    font-weight: bold;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    margin-bottom: 10px;
+    margin-right: 10px;
+  }
+
+body {
+    background: #222D32;
+    font-family: 'Roboto', sans-serif;
+}
+
+.login-box {
+    margin-top: 125px;
+    height: auto;
+    background: #1A2226;
+    text-align: center;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.login-key {
+    height: 100px;
+    font-size: 80px;
+    line-height: 100px;
+    -webkit-text-fill-color: transparent;
+}
+
+.login-title {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 30px;
+    letter-spacing: 2px;
+    margin-top: 15px;
+    font-weight: bold;
+    color: #ECF0F5;
+    padding-top: 20px;
+}
+
+.login-form {
+    margin-top: 25px;
+    text-align: left;
+}
+
+input[type=text] {
+    background-color: #1A2226;
+    border: none;
+    border-top: 0px;
+    border-radius: 0px;
+    font-weight: bold;
+    outline: 0;
+    padding-left: 10px !important;
+    margin-bottom: 20px;
+    /* margin-right: 5px; */
+    padding-left: 0px;
+    color: #ECF0F5 ;
+    width: 49%;
+}
+
+input[type=password] {
+    background-color: #1A2226;
+    border: none;
+    border-top: 0px;
+    border-radius: 0px;
+    font-weight: bold;
+    outline: 0;
+    margin-bottom: 20px;
+    color: #ECF0F5;
+}
+
+::placeholder {
+  color: #777 !important;
+  font-size: 12px;
+}
+
+.form-group {
+    margin-bottom: 40px;
+    margin-top: 100px;
+    outline: 0px;
+}
+
+/* .form-control:focus {
+    border-color: inherit;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    outline: 0;
+    background-color: #1A2226;
+    color: #ECF0F5;
+} */
+
+input:focus {
+    outline: none;
+    box-shadow: 0 0 0;
+}
+
+label {
+    margin-bottom: 0px;
+}
+
+.form-control-label {
+    /* font-size: 10px; */
+    color: rgb(148, 144, 144);
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.btn-outline-primary {
+    border-color: #0DB8DE;
+    color: #0DB8DE;
+    border-radius: 0px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.btn-outline-primary:hover {
+    background-color: #0DB8DE;
+    right: 0px;
+}
+
+.login-btm {
+    float: left;
+}
+
+.login-button {
+    padding-right: 0px;
+    text-align: right;
+    margin-bottom: 25px;
+}
+
+.login-text {
+    text-align: left;
+    padding-left: 0px;
+    color: #A2A4A4;
+}
+
+.loginbttm {
+    padding: 0px;
+}
+  
+ textarea.form-control {
+  background-color: #1A2226;
+  border: 1px solid #222D32;
+  width: 100%;
+  border-radius: none;
+  color: #ECF0F5;
+  border-radius: 0;
+}
+
+textarea:focus-visible {
+  border: none;
+}
+
+textarea.form-control.extended {
+  height: 434px !important;
+  /* margin-top: 32px; */
+}
+
+.btn-extended {
+  margin-left: 15px;
+  border-radius: 0;
+}
+
+.form-control-label.code-label {
+  background-color: #222D32;
+  color: #fff;
+  width: 100%;
+  border: 1px solid #222D32;
+  padding-left: 5px;
+}
+
+.form-control-label.code-label-blue {
+  background-color: rgb(54, 94, 139) !important;
+  color: #fff;
+  width: 100%;
+  border: 1px solid rgb(54, 94, 139) !important;
+  padding-left: 5px;
+}
+
+.container.code-nav {
+  background-color: rgb(54, 94, 139);
+  width: 100%;
+}
+
+.code-nav {
+  display: inline;
+}
+
+.btn-outline-success {
+  border-radius: 0;
+  background-color: rgb(54, 94, 139);
+  color: #fff;
+  float: right;
+  padding: 7px 20px;
+}
+/* 
+.btn-outline-success.pos-left {
+  margin-right: 5px;
+} */
+
+.btn-outline-success:hover, .btn-outline-success:focus {
+  background-color: #fff;
+  color: rgb(54, 94, 139);
+  margin: none;
+  outline: none;
+}
+
+.wrap {
+  display: inline;
+}
+
+.modal {
+  margin-top: 70px;
+  margin-left: -400px;
+
+}
+
+.modal-content, .modal-content h4 {
+  color: rgb(88, 135, 189) !important;
+}
+
+.modal-content {
+  background-color: #222D32;
+  width: 1000px!important
+}
+
+.modal-header {
+  border-bottom: 0 none;
+}
+
+.modal-footer {
+  border-top: 0 none;
+}
+
+.close {
+  outline: none;
+  color: rgb(54, 94, 139);
+}
+
+.close:hover {
+  outline: none;
+  color: rgb(51, 87, 128);
+}
+
+.pos-left {
+  float: left;
+}
+
+.fa-clock {
+  margin-left: 10px;
+}
+
+.form-control-label {
+  font-weight: normal;
+}
+
+.btn-outline-success.nav-btn {
+  padding-top: 15px !important;
+  padding-bottom: 14px !important;
+}
+
+.modal-title {
+  font-weight: bold;
+}
+
+.form-control-label.big {
+  padding-bottom: 5px;
+  font-size: medium;
+}
+
+.inline {
+  display: inline;
+}
+
+textarea {
+  resize: none;
+}
+
+/* Customize website's scrollbar like Mac OS
+Not supports in Firefox and IE */
+
+/* total width */
+textarea::-webkit-scrollbar {
+  background-color:#222D32;
+  width:16px;
+}
+
+/* background of the scrollbar except button or resizer */
+textarea::-webkit-scrollbar-track {
+  background-color:#222D32;
+}
+textarea::-webkit-scrollbar-track:hover {
+  background-color:#222D32
+}
+
+/* scrollbar itself */
+textarea::-webkit-scrollbar-thumb {
+  background-color:#babac0;
+  border-radius:16px;
+  border:5px solid #222D32;
+}
+textarea::-webkit-scrollbar-thumb:hover {
+  background-color:#a0a0a5;
+  border:4px solid #222D32
+}
+
+/* set button(top and bottom of the scrollbar) */
+textarea::-webkit-scrollbar-button {
+  display:none
+}
+
+.console-wrap {
+  margin-top: 140px !important;
+}

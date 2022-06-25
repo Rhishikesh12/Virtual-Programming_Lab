@@ -1,0 +1,192 @@
+input[type=text] {
+    background-color: #1A2226;
+    border: none !important;
+    border-bottom: none !important;
+    border-top: 0px !important;
+    border-radius: 0px !important;
+    font-weight: bold !important;
+    outline: 0 !important;
+    margin-bottom: 20px !important;
+    padding-left: 0px;
+    color: #ECF0F5;
+} 
+
+input[type=password] {
+    background-color: #1A2226;
+    border: none !important;
+    border-bottom: none !important;
+    border-top: 0px !important;
+    border-radius: 0px !important;
+    font-weight: bold;
+    outline: 0 !important;
+    padding-left: 0px;
+    margin-bottom: 20px;
+    color: #ECF0F5;
+} 
+
+
+
+/* multistep form styling */
+
+/*custom font*/
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+/*basic reset*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+    background: -webkit-linear-gradient(to left, #6441A5, #2a0845); /* Chrome 10-25, Safari 5.1-6 */
+}
+
+body {
+    background-color: rgb(54, 94, 139) !important;
+    font-family: montserrat, arial, verdana;
+    /* background-image: url("loginbackwall.jpg") !important; */
+}
+
+
+/*form styles*/
+#msform {
+    text-align: center;
+    position: relative;
+    margin-top: 100px;
+}
+
+#msform fieldset {
+    background: #222D32;
+    border: 0 none;
+    border-radius: 0px;
+    box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+    padding: 20px 30px;
+    box-sizing: border-box;
+    width: 80%;
+    margin: 0 10%;
+
+    /*stacking fieldsets above each other*/
+    position: relative;
+}
+
+/*Hide all except first fieldset*/
+#msform fieldset:not(:first-of-type) {
+    display: none;
+}
+
+/*inputs*/
+#msform input, #msform textarea {
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 0px;
+    margin-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: montserrat;
+    color: #fff;
+    font-size: 13px;
+}
+
+#msform input:focus, #msform textarea:focus {
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6) !important;
+    box-shadow: inset 0px 1px 1px rgba(0,0,0,0.075), 0px 0px 8px rgba(102,175,233,0.6) !important;
+    border-color: #66afe9 !important;
+    outline-width: 0;
+    transition: All 0.15s ease-in;
+    -webkit-transition: All 0.15s ease-in;
+    -moz-transition: All 0.15s ease-in;
+    -o-transition: All 0.15s ease-in;
+}
+
+/*buttons*/
+#msform .action-button {
+    width: 100px;
+    background: rgb(54, 94, 139);
+    font-weight: bold;
+    color: white;
+    border: 0 none;
+    border-radius: 4px ;
+    cursor: pointer;
+    /* padding: 6px 12px; */
+    margin: 10px 5px;
+}
+
+.user-selection{
+    width: 80% !important;
+    background: rgb(54, 94, 139);
+    font-weight: bold;
+    color: white;
+    border: 0 none;
+    border-radius: 4px ;
+    cursor: pointer;
+    padding: 10px 5px;
+    margin: 20px 20px !important;
+}
+
+#msform .action-button:hover, #msform .action-button:focus {
+    box-shadow: none ;
+    background-color:  rgb(86, 144, 209) !important;
+    border-color: rgb(86, 144, 209)
+}
+
+#msform .action-button-previous {
+    box-shadow: 0 0 0 ;
+    background: transparent;
+    font-weight: bold;
+    color: white;
+    border: 0 none;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 6px 12px;
+    float: left;
+    outline: none !important;
+}
+
+#msform .action-button-previous:hover, #msform .action-button-previous:focus {
+    box-shadow: none ;
+    /* background-color:  rgb(86, 144, 209) !important;
+    border-color: rgb(86, 144, 209) */
+}
+
+/*headings*/
+.fs-title {
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #fff !important;
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.fs-subtitle {
+    font-weight: normal;
+    font-size: 13px;
+    color: #fff !important;
+    margin-bottom: 20px;
+}
+
+.glyphicon {
+    color: rgb(66, 114, 170)  !important;
+}
+
+.glyphicon:hover {
+    color: rgb(86, 144, 209)  !important;
+}
+
+.btn-primary {
+    background: transparent !important;
+    border: none !important;
+    float: left;
+    border: none !important;
+    outline: none !important;
+}
+
+.btn-primary:hover {
+    background-color: none !important;
+}
+
+.signup-error {
+    color: red;
+}
